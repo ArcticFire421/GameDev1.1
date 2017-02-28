@@ -1,1 +1,2 @@
-# GameDev1.1
+*/Library
+*/Temp
