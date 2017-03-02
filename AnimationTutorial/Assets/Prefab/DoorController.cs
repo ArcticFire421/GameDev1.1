@@ -1,52 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorController : MonoBehaviour {
+public class DoorController : MonoBehaviour
+{
 
-	//Animator animator;
-	public Rect openDoorRectangle;
-	public Rect closeDoorRectangle;
+
+
 	public Animator animator;
 
-
-/*
-	void Start () 
+	public void OnTriggerEnter(Collider collider)
 	{
-		animator = GetComponent <Animator>();
-	}*/
-	
-
-/*	void OnGUI () 
-	{
-		if (GUILayout.Button("Open Door"))
-		{
-			animator.SetInteger ("Door Close", 0);
-			animator.SetInteger ("Door Open", 1);
-		}
-
-
-
-		if (GUILayout.Button("Close Door"))
-		{
-			animator.SetInteger ("Door Close", 1);
-			animator.SetInteger ("Door Open", 0);
-		}
-	}*/
-
-	void OnGUI ()
-	{
-		if(GUI.Button (openDoorRectangle, "Open Door"))
-		{
-			animator.SetInteger ("Door Open", 1);
-			animator.SetInteger ("Door Close", 0);
-		}
-
-		if(GUI.Button (closeDoorRectangle, "Close Door"))
-		{
-			animator.SetInteger ("Door Open", 0);
-			animator.SetInteger ("Door Close", 1);
-		}
+		OpenDoor ();
 	}
 
+	public void OnTriggerExit (Collider collider)
+	{
+		CloseDoor ();
+	}
+
+	public void OpenDoor()
+	{
+		animator.SetInteger ("Door Open", 1);
+		animator.SetInteger ("Door Close", 0);
+	}
+
+
+	public void CloseDoor()
+	{
+		animator.SetInteger ("Door Open", 0);
+		animator.SetInteger ("Door Close", 1);
+	}
 
 }

@@ -38,7 +38,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010396621586}
   - 95: {fileID: 95000014146865266}
-  - 114: {fileID: 114000011386838810}
   m_Layer: 0
   m_Name: DoorRoot
   m_TagString: Untagged
@@ -53,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012590382402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.62, y: -1.13, z: -12.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -138,27 +137,3 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000011386838810
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012590382402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f043faca298428da605a430c3961ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorRectangle:
-    serializedVersion: 2
-    x: 100
-    y: 100
-    width: 100
-    height: 100
-  closeDoorRectangle:
-    serializedVersion: 2
-    x: 100
-    y: 200
-    width: 100
-    height: 100
-  animator: {fileID: 95000014146865266}
