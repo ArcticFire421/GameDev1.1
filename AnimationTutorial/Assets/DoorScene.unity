@@ -236,6 +236,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f043faca298428da605a430c3961ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openDoorRectangle:
+    serializedVersion: 2
+    x: 50
+    y: 50
+    width: 50
+    height: 50
+  animator: {fileID: 1246195981}
 --- !u!1 &1341733652
 GameObject:
   m_ObjectHideFlags: 0
